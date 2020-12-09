@@ -28,6 +28,7 @@ void FlatSurface::draw() {
     start2DTexture(ads);
     for (int i = 0; i < 4; ++i) {
 
+        
         glBegin(GL_QUADS);
         glTexCoord2f(0.0, 1);
         glVertex3f(corners[i].x, corners[i].y, corners[i].z);
