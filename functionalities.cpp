@@ -2,6 +2,10 @@
 // Created by kunal on 4/3/18.
 //
 
+#include <GL/glut.h>
+#include <GL/freeglut.h>
+#include <GL/glu.h>
+#include <GL/gl.h>
 #include "functionalities.h"
 #include "shapes.h"
 #include <bits/stdc++.h>
