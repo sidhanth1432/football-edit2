@@ -1,10 +1,10 @@
 //
 // Created by kunal on 3/3/18.
 //
+#include <usr/include/GL/glut.h>
 
-#include <GL/glut.h>
-#include <GL/glu.h>
-#include <GL/freeglut.h> 
+#include <usr/include/GL/freeglut.h> 
+ 
 #include <bits/stdc++.h>
 #include "constants.h"
 #include "functionalities.h"
