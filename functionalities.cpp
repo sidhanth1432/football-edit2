@@ -2,7 +2,6 @@
 // Created by kunal on 4/3/18.
 //
 
-#include <GL/glut.h>
 #include <GL/glext.h>
 #include "functionalities.h"
 #include "shapes.h"
