@@ -2,8 +2,9 @@
 // Created by kunal on 3/3/18.
 //
 
-
-#include <GL/glext.h>
+#include <GL/glut.h>
+#include <GL/glu.h>
+#include <GL/freeglut.h> 
 #include <bits/stdc++.h>
 #include "constants.h"
 #include "functionalities.h"
