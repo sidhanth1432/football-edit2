@@ -1,9 +1,10 @@
 //
 // Created by kunal on 4/3/18.
 //
-#include <GL/glut.h>
-#include <GL/glu.h>
-#include <GL/freeglut.h> 
+#include <usr/include/GL/glut.h>
+
+#include <usr/include/GL/freeglut.h> 
+
 
 
 #include "shapes.h"
