@@ -2,12 +2,6 @@
 // Created by kunal on 4/3/18.
 //
 
-#include <GL/glut.h>
-
-#include <GL/freeglut.h> 
-
-
-
 #include "functionalities.h"
 #include "shapes.h"
 #include <bits/stdc++.h>
@@ -100,8 +94,8 @@ bool isItGoal(PhysicalState ball) {
 
 void backgroundMusicPlayer(int _) {
 
-    //if (currentMode != GOAL_ANIMATION)
- system("start E:\\ss\\OpenGL-3D-Football-Penalty-Shooter-master\\back.wav");
+//    if (currentMode != GOAL_ANIMATION)
+    system("paplay resources/back.wav --volume 30000 &");
     glutTimerFunc(5 * 1000, backgroundMusicPlayer, 0);
 }
 
@@ -202,7 +196,7 @@ void initialiseEverything() {
         delete determineSphere;
         determineSphere = NULL;
     }
-    system("start E:\\ss\\OpenGL-3D-Football-Penalty-Shooter-master\\whistle.wav");
+    system("paplay resources/whistle.wav &");
 }
 
 void initialiseEverythingCallback(int _) {
@@ -343,18 +337,15 @@ void drawHUD() {
 INSTRUCTIONS
 You can use the mouse to look around.
 Use the +/- keys for zooming in/out.
-
 AIMING
 Press the Enter/Return key to enter Aiming Mode.
 Direct the arrow with the arrow keys to set up the
 direction of the shot.
-
 POWERING
 Press and hold Space after aiming to power up.
 Release Space to select the specified power level.
 Press the ESC key (when holding down SPACE) to cancel
 POWERING mode.
-
 Press ESC key to return to the previous mode or to exit the
 instructions.
 Press Q at any time to exit the game.
