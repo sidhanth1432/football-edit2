@@ -2,7 +2,6 @@
 // Created by kunal on 3/3/18.
 //
 
-#include <GL/glu.h>
 #include <GL/glut.h>
 #include <GL/glext.h>
 #include <bits/stdc++.h>
