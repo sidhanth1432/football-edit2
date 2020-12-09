@@ -2,7 +2,7 @@
 #include <GL/glut.h>
 #include <GL/freeglut.h>
 #include <GL/glu.h>
-#include <GL/gl.h>
+#include <GL/glext.h>
 #include "shapes.h"
 #include <bits/stdc++.h>
 #include "functionalities.h"
