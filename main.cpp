@@ -2,10 +2,6 @@
 // Created by kunal on 3/3/18.
 //
 #include <GL/glut.h>
-
-#include <GL/freeglut.h> 
-
- 
 #include <bits/stdc++.h>
 #include "constants.h"
 #include "functionalities.h"
@@ -391,7 +387,7 @@ void idle() {
                     scoredGoal = isItGoal(*determineSphere);
                     if (scoredGoal) {
                         Goals++;
-                        system("start E:\ss\OpenGL-3D-Football-Penalty-Shooter-master\resources\goal.mp3");
+                        system("paplay resources/goal.wav&");
                     }
 
                     rotateMsg(0);
