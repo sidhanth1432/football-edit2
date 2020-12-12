@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.9)
 project(Football_Penalty_Shooter)
-
+find_package(OpenGL)
+add_subdirectory(freeglut)
 set(CMAKE_CXX_STANDARD 14)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -lglut -lGLU -lGL")
 
@@ -36,6 +37,10 @@ FILE(COPY resources DESTINATION "${CMAKE_BINARY_DIR}")
 #endif(DOXYGEN_FOUND)
 
 add_executable(Football_Penalty_Shooter ${SOURCE_FILES})
+target_link_libraries(OpenGLAugust
+        ${OPENGL_gl_LIBRARY}
+        ${OPENGL_glu_LIBRARY}
+        freeglut_static )
 add_custom_target(run
         COMMAND Football_Penalty_Shooter
         DEPENDS Football_Penalty_Shooter
