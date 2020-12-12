@@ -37,7 +37,7 @@ FILE(COPY resources DESTINATION "${CMAKE_BINARY_DIR}")
 #endif(DOXYGEN_FOUND)
 
 add_executable(Football_Penalty_Shooter ${SOURCE_FILES})
-target_link_libraries(OpenGLAugust
+target_link_libraries(Football_Penalty_Shooter
         ${OPENGL_gl_LIBRARY}
         ${OPENGL_glu_LIBRARY}
         freeglut_static )
