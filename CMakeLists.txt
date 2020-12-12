@@ -42,7 +42,7 @@ find_package(OpenGL REQUIRED)
 find_package(GLUT REQUIRED)
 include_directories( ${OPENGL_INCLUDE_DIRS}  ${GLUT_INCLUDE_DIRS} )
 
-target_link_libraries(testas ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} )
+target_link_libraries(Football_Penalty_Shooter ${OPENGL_LIBRARIES} ${GLUT_LIBRARY} )
 add_custom_target(run
         COMMAND Football_Penalty_Shooter
         DEPENDS Football_Penalty_Shooter
